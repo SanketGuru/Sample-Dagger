@@ -14,13 +14,18 @@ import dagger.Provides;
  */
 @Module
 public class MyModule {
-    @Provides @Named("Subtract")
-    Calculate provideCalculator(){
-        Calculate cal=new Subtract();
+    @Provides
+    @Named("Subtract")
+    Calculate provideCalculator() {
+        Calculate cal = new Add();
+
         return cal;
-    } @Provides  @Named("Add")
-    Calculate provideAddCalculator(){
-        Calculate cal=new Add();
+    }
+
+    @Provides
+    @Named("Add")
+    Calculate provideAddCalculator() {
+        Calculate cal = new Subtract();
         return cal;
     }
 }
