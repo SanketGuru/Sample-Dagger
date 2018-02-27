@@ -13,14 +13,16 @@ import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.android.ext.android.inject
 
 class MainActivity : AppCompatActivity() {
-    val cal: Calculate by inject()
+
+    val add: Calculate by inject(name = "Add")
+    val sub: Calculate by inject(name = "Subtract")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
         fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action " + cal.getData(2, 3), Snackbar.LENGTH_LONG)
+            Snackbar.make(view, "Replace with your own action " + "Add" + add.getData(2, 3) +"Sub" +sub.getData(2, 3), Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
     }

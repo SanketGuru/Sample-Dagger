@@ -5,7 +5,6 @@
       <module fileurl="file://F:\Android\Sample-Dagger\MyDaggerSample.iml" filepath="F:\Android\Sample-Dagger\MyDaggerSample.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sample-Dagger.iml" filepath="$PROJECT_DIR$/Sample-Dagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://F:\Android\Sample-Dagger\app\app.iml" filepath="F:\Android\Sample-Dagger\app\app.iml" />
     </modules>
   </component>
 </project>

@@ -23,3 +23,8 @@ class Subtract : Calculate {
 
     override fun getData(a: Int, b: Int): String = "Subtracting  : " + (a - b)
 }
+
+class Xyz (val cal:Calculate ){
+
+}
+
